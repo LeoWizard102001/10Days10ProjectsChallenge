@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="./style.css"/>
+    <title>Random Password Generator</title>
+</head>
+<body>
+    <h1>Random Password Generator</h1>
+        <label class="container">
+            <span class="span1">Include Letters</span>
+            <input id="check1" type="checkbox" onchange="checkBox('letters')">
+            <span class="checkmark"></span>
+        </label>
+        <label class="container">
+            <span class="span1">Include Symbols</span>
+            <input id="check2" type="checkbox" onchange="checkBox('symbols')">
+            <span class="checkmark"></span>
+        </label>
+        <label class="container">
+            <span class="span1">Password Length</span>
+            <input class="input_no"type="number" id="number">
+        </label>
+        <div class="button">
+            <button onclick="generateResult()">Generate</button>
+        </div>
+        <div class="result">
+            <h1 id="result">-Password-</h1>
+        </div>
+    <script type="text/javascript" src="./index.js"></script>
+</body>
+</html>
